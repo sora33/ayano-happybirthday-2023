@@ -346,6 +346,20 @@ body {
   }
 }
 
+.rect {
+  opacity: 0;
+  animation: fadeInRect 2s ease-out 1s forwards;
+}
+
+@keyframes fadeInRect {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .text {
   color: #8b6a60;
   font-family: 'Lato', sans-serif;
@@ -401,4 +415,13 @@ body {
   100% {
     opacity: 1;
   }
+}
+
+.img {
+  width: 100%;
+}
+
+.img img {
+  width: 100%;
+  height: auto;
 }
