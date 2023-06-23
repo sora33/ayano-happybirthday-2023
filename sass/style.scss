@@ -1,0 +1,154 @@
+@import "setting"; //設定用
+@import "meyer-reset"; //リセット
+
+
+@import url(https://fonts.googleapis.com/css?family=Lato:300italic);
+
+body {
+  padding: 10rem 0 5rem;
+}
+
+body {
+  background: #ee9ca7;
+}
+.ttl{
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+#cake {
+  display: block;
+  position: relative;
+  margin: -22rem auto 0rem auto;
+}
+
+/* ============================================== Candle
+*/
+
+.velas {
+  background: #ffffff;
+  border-radius: 10px;
+  position: absolute;
+  top: 11rem;
+  left: 50%;
+  margin-left: -2.4px;
+  margin-top: -8.33333333px;
+  width: 5px;
+  height: 35px;
+  transform: translateY(-400px);
+  backface-visibility: hidden;
+  animation: in 500ms 6s ease-out forwards;
+}
+.velas:after,
+.velas:before {
+  background: rgba(255, 0, 0, 0.4);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2.22222222px;
+}
+.velas:after {
+  top: 25%;
+  left: 0;
+}
+.velas:before {
+  top: 45%;
+  left: 0;
+}
+
+/* ============================================== Fire
+*/
+
+.fuego {
+  border-radius: 100%;
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  margin-left: -2.6px;
+  width: 6.66666667px;
+  height: 18px;
+}
+.fuego:nth-child(1) {
+  animation: fuego 2s 6.5s infinite;
+}
+.fuego:nth-child(2) {
+  animation: fuego 1.5s 6.5s infinite;
+}
+.fuego:nth-child(3) {
+  animation: fuego 1s 6.5s infinite;
+}
+.fuego:nth-child(4) {
+  animation: fuego 0.5s 6.5s infinite;
+}
+.fuego:nth-child(5) {
+  animation: fuego 0.2s 6.5s infinite;
+}
+
+/* ============================================== Animation Fire
+*/
+
+@keyframes fuego {
+  0%, 100% {
+    background: rgba(254, 248, 97, 0.5);
+    box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.2);
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    background: rgba(255, 50, 0, 0.1);
+    box-shadow: 0 0 40px 20px rgba(248, 233, 209, 0.2);
+    transform: translateY(-20px) scale(0);
+  }
+}
+
+@keyframes in {
+  to {
+    transform: translateY(0);
+  }
+}
+
+.text {
+  color: #8b6a60;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-style:italic;
+  text-align: center;
+  opacity: 0;  // デフォルトでは非表示にします
+  transform: scale(0.8);  // デフォルトでは少し小さめに表示します
+  animation: fadeInScale 2s ease-out 5s forwards;  // 5秒後に2秒かけてアニメーションを開始します
+  font-size: 2rem;
+  margin: 3rem 0 20rem;
+}
+
+// アニメーション定義
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+.mainText{
+  margin: 10rem 0 0;
+}
+.cardText{
+  margin: 10rem 0 0;
+  padding: 1rem;
+  background-color: #f6ead1;
+}
+
+.eachTextAnime{
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: .5rem;
+}
+.eachTextAnime span{opacity: 0;}
+.eachTextAnime.appeartext span{ animation:text_anime_on 1s ease-out forwards; }
+@keyframes text_anime_on {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}

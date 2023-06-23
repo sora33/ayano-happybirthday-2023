@@ -1,0 +1,182 @@
+.inner {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+@media screen and (min-width: 1080px) {
+  .inner {
+    padding: 0 24px 0 24px;
+    max-width: 1080px;
+  }
+}
+
+.base-inner {
+  width: 100%;
+  max-width: 1128px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+@media screen and (min-width: 1080px) {
+  .base-inner {
+    padding: 0 24px 0 24px;
+  }
+}
+
+.default-inner {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+@media screen and (min-width: 1080px) {
+  .default-inner {
+    padding: 0 24px 0 24px;
+    max-width: 1080px;
+  }
+}
+
+.mt-05 {
+  margin-top: .5rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-15 {
+  margin-top: 1.5rem;
+}
+
+@media screen and (min-width: 1080px) {
+  .mt-15 {
+    margin-top: 2rem;
+  }
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mt-2-3 {
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 1080px) {
+  .mt-2-3 {
+    margin-top: 3rem;
+  }
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}
+
+@media screen and (min-width: 1080px) {
+  .mt-3 {
+    margin-top: 4rem;
+  }
+}
+
+.mt-5 {
+  margin-top: 5rem;
+}
+
+@media screen and (min-width: 1080px) {
+  .mt-5 {
+    margin-top: 6rem;
+  }
+}
+
+.pt-05 {
+  padding-top: .5rem;
+}
+
+.pt-1 {
+  padding-top: 1rem;
+}
+
+.pt-15 {
+  padding-top: 1.5rem;
+}
+
+.pt-2 {
+  padding-top: 2rem;
+}
+
+@media screen and (min-width: 1080px) {
+  .pt-2 {
+    padding-top: 3rem;
+  }
+}
+
+.fz-sm {
+  font-size: .9rem;
+}
+
+.fz-md {
+  font-size: 1.2rem;
+}
+
+.c-main {
+  color: #716455;
+}
+
+.c-base {
+  color: #F7F4F0;
+}
+
+.c-sub {
+  color: #F4A343;
+}
+
+.c-white {
+  color: #fafafa;
+}
+
+.c-black {
+  color: #000;
+}
+
+.bgc-main {
+  background-color: #716455;
+}
+
+.bgc-base {
+  background-color: #F7F4F0;
+}
+
+.bgc-sub {
+  background-color: #F4A343;
+}
+
+.bgc-white {
+  background-color: #fafafa;
+}
+
+.bgc-black {
+  background-color: #000;
+}
+
+.ta-center {
+  text-align: center;
+}
+
+.ta-left {
+  text-align: left;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.td-u {
+  text-decoration: underline;
+}
+
+.po-r {
+  position: relative;
+}
