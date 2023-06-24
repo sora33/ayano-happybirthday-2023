@@ -251,6 +251,11 @@ body {
   font-weight: bold;
 }
 
+b {
+  font-weight: bold;
+  display: inline-block;
+}
+
 #cake {
   display: block;
   position: relative;
