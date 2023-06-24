@@ -1,3 +1,15 @@
+// ボタンと音声要素を取得
+var myAudio = document.getElementById('myAudio');
+var playButton = document.getElementById('playButton');
+
+// ボタンがクリックされたときの処理
+playButton.addEventListener('click', function() {
+  // 音声の再生
+  myAudio.play();
+  // ボタンを非表示にする
+  playButton.style.display = "none";
+});
+
 // eachTextAnimeにappeartextというクラス名を付ける定義
 function EachTextAnimeControl() {
   $('.eachTextAnime').each(function () {

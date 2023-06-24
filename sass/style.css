@@ -244,6 +244,7 @@ body {
 
 body {
   background: #ee9ca7;
+  position: relative;
 }
 
 .ttl {
@@ -429,4 +430,22 @@ b {
 .img img {
   width: 100%;
   height: auto;
+}
+
+.bgm-button {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  background-color: #f55a4e;
+  color: #ffffff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.bgm-button:hover {
+  background-color: #f78989;
 }
